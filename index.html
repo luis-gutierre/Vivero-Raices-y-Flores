@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivero Raíces y Flores | Jardines Verticales y Catálogo de Plantas</title>
+    <meta name="description" content="Vivero Raíces y Flores - Especialistas en jardines verticales, techos verdes y las mejores plantas de la Agraria">
+    <link rel="preconnect" href="https://upload.wikimedia.org">
+    <link rel="dns-prefetch" href="https://wa.me">
+    <link rel="dns-prefetch" href="https://upload.wikimedia.org">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2d7a2f;
+            --secondary-color: #5cb85c;
+            --accent-color: #8bc34a;
+            --dark-green: #1b5e20;
+            --light-bg: #f4f9f4;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --text-light: #666666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header Superior */
+        .top-header {
+            background: var(--dark-green);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .top-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Navegación Principal */
+        .main-nav {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a, .nav-menu button {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .nav-menu a:hover, .nav-menu button:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-menu a::after, .nav-menu button::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after, .nav-menu button:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 122, 47, 0.9), rgba(92, 184, 92, 0.8)), 
+                        url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1600') center/cover;
+            color: var(--white);
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s 0.3s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            animation: fadeInUp 1s 0.6s both;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            background: var(--dark-green);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Secciones */
+        .section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--accent-color);
+        }
+
+        /* Grid de Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .service-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Features */
+        .features {
+            background: var(--light-bg);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-item .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        /* Catálogo Lateral Deslizante */
+        .catalog-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(3px);
+            z-index: 1999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .catalog-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .catalog-section {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--white);
+            box-shadow: -5px 0 30px rgba(0,0,0,0.3);
+            z-index: 2000;
+            overflow-y: auto;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(100%);
+            will-change: transform;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
+            contain: layout style paint;
+        }
+
+        .catalog-section.active {
+            transform: translateX(0);
+        }
+
+        .catalog-header-section {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a5f47 100%);
+            color: var(--white);
+            padding: 35px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .catalog-header-section h2 {
+            font-size: 36px;
+            margin: 0;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .catalog-header-section p {
+            display: none;
+        }
+
+        .close-catalog {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: var(--white);
+            font-size: 42px;
+            cursor: pointer;
+            transition: all 0.3s;
+            padding: 8px 16px;
+            line-height: 1;
+            border-radius: 8px;
+        }
+
+        .close-catalog:hover {
+            transform: rotate(90deg) scale(1.1);
+            background: rgba(255,255,255,0.3);
+        }
+
+        .catalog-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px 50px;
+            background: var(--light-bg);
+            position: sticky;
+            top: 106px;
+            z-index: 9;
+            border-bottom: 3px solid var(--border);
+            will-change: transform;
+            backface-visibility: hidden;
+            contain: layout style;
+        }
+
+        .tab-btn {
+            padding: 16px 40px;
+            background: var(--white);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 17px;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .tab-btn.active {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 122, 47, 0.3);
+        }
+
+        .catalog-content {
+            padding: 50px 80px;
+            max-width: 1600px;
+            margin: 0 auto;
+            contain: layout style;
+        }
+
+        .tab-panel {
+            display: none;
+            contain: layout style paint;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 35px;
+            contain: layout style paint;
+            will-change: contents;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            contain: layout style paint;
+            will-change: transform;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px) translateZ(0);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .product-image-container {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.4s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            opacity: 0;
+        }
+
+        .product-image.loaded {
+            opacity: 1;
+        }
+
+        .product-image[data-src] {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+        }
+
+        .image-skeleton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite;
+        }
+
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        @media (hover: hover) {
+            .product-card:hover .product-image {
+                transform: scale(1.08) translateZ(0);
+            }
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        
+        /* NUEVO: Estilo para el precio */
+        .product-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+        
+        .product-description {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .buy-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #25d366, #20ba5a);
+            color: var(--white);
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Lightbox para imágenes */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 3000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            animation: zoomIn 0.3s;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: var(--white);
+            border: none;
+            color: var(--text-dark);
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lightbox-close:hover {
+            transform: rotate(90deg);
+            background: var(--accent-color);
+        }
+
+        .lightbox-info {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .catalog-content {
+            padding: 30px;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* WhatsApp Flotante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            text-decoration: none;
+            animation: pulse 2.5s ease-in-out infinite;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid #25d366;
+            animation: ripple 2.5s ease-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.05); }
+            50% { transform: scale(1); }
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.4);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1.8);
+                opacity: 0;
+            }
+        }
+
+        .whatsapp-float:hover {
+            background: #128c7e;
+            transform: scale(1.15) !important;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+
+        .whatsapp-float:hover::after {
+            animation: none;
+        }
+
+        .whatsapp-float img {
+            width: 32px;
+            height: 32px;
+            animation: wiggle 3s ease-in-out infinite;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            10% { transform: rotate(-10deg); }
+            20% { transform: rotate(10deg); }
+            30% { transform: rotate(-10deg); }
+            40% { transform: rotate(10deg); }
+            50%, 100% { transform: rotate(0deg); }
+        }
+
+        .whatsapp-float:hover img {
+            animation: spin 0.6s ease;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.1); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-green);
+            color: var(--white);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .catalog-content {
+                padding: 30px 20px;
+            }
+
+            .catalog-header-section {
+                padding: 20px;
+            }
+
+            .catalog-header-section h2 {
+                font-size: 24px;
+            }
+
+            .catalog-tabs {
+                padding: 15px 20px;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: var(--white);
+                width: 100%;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                transition: left 0.3s;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="contact-info">
+                <span>📱 +51 992 555 359</span>
+                <span>📍 Lima - Pachacamac - Manchay - Chacra</span>
+            </div>
+            <div class="social-links">
+                <a href="https://wa.me/51992555359" target="_blank">💬 WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>🌿</span> Raíces y Flores</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#" onclick="openCatalog(); return false;">🌺 Catálogo</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="https://wa.me/51992555359" target="_blank" rel="noopener">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <h1>🌱 Transformamos Espacios con Naturaleza</h1>
+        <p>Jardines Verticales • Techos Verdes • Paisajismo Profesional</p>
+        <button class="cta-button" onclick="openCatalog()">Ver Catálogo de Plantas</button>
+    </section>
+
+    <section class="section" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Jardines Verticales</h3>
+                    <p>Diseño e instalación de muros verdes con sistemas hidropónicos.
+                    Transformamos paredes en obras de arte vivas.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Techos Verdes</h3>
+                    <p>Implementación de azoteas y techos verdes con sistemas de impermeabilización profesional.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌳</div>
+                    <h3>Paisajismo</h3>
+                    <p>Diseño y ejecución de jardines residenciales y comerciales personalizados.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌺</div>
+                    <h3>Catálogo de Plantas</h3>
+                    <p>Las mejores plantas de la Agraria para interiores y exteriores.</p>
+                    <button class="cta-button" onclick="openCatalog()" style="margin-top: 15px; padding: 10px 20px; font-size: 14px;">Ver Catálogo</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Sistemas de Riego</h3>
+                    <p>Diseño e implementación de sistemas de riego automático y tecnificado.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Diseño de Espacios</h3>
+                    <p>Diseño de terrazas, jardines y distribución de ambientes integrales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features" id="nosotros">
+        <div class="container">
+            <h2 class="section-title">¿Por Qué Elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h4>Experiencia Comprobada</h4>
+                    <p>Años transformando espacios en Lima y todo el Perú</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Garantía Total</h4>
+                    <p>Respaldamos todos nuestros trabajos con garantía</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon">👥</div>
+                    <h4>Equipo Profesional</h4>
+                    <p>Especialistas en agronomía y paisajismo</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon">🌍</div>
+                    <h4>Eco-Friendly</h4>
+                    <p>Soluciones sostenibles que cuidan el medio ambiente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <p style="font-size: 18px; margin-bottom: 15px;">📍 Lima - Pachacamac - Manchay - Chacra</p>
+            <p style="margin-bottom: 10px;">📱 +51 992 555 359 | 💬 WhatsApp</p>
+            <p style="margin-top: 20px; opacity: 0.8;">© 2024 Vivero Raíces y Flores. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/51992555359" class="whatsapp-float" target="_blank" rel="noopener">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="32" height="32">
+    </a>
+
+    <div class="catalog-overlay" id="catalogOverlay" onclick="closeCatalog()"></div>
+
+    <div class="catalog-section" id="catalogSection">
+        <div class="catalog-header-section">
+            <h2>🌿 Catálogo de Plantas</h2>
+            <button class="close-catalog" onclick="closeCatalog()" aria-label="Cerrar catálogo">✕</button>
+        </div>
+
+        <div class="catalog-tabs">
+            <button class="tab-btn active" onclick="switchTab(event, 'interiores')">🏠 Interiores</button>
+            <button class="tab-btn" onclick="switchTab(event, 'exteriores')">🌳 Exteriores</button>
+            <button class="tab-btn" onclick="switchTab(event, 'materiales')">🛠️ Materiales</button>
+        </div>
+
+        <div class="catalog-content">
+            <div class="tab-panel active" id="interiores-tab">
+                <div class="products-grid" id="interioresGrid"></div>
+            </div>
+
+            <div class="tab-panel" id="exteriores-tab">
+                <div class="products-grid" id="exterioresGrid"></div>
+            </div>
+
+            <div class="tab-panel" id="materiales-tab">
+                <div class="products-grid" id="materialesGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxName"></h3>
+                <p id="lightboxPrice" style="font-size: 16px; font-weight: 600; color: var(--primary-color); margin-bottom: 10px;"></p>
+                <p id="lightboxDescription"></p>
+                <a href="#" id="lightboxBuyBtn" class="buy-btn" target="_blank" style="margin-top: 15px;">Comprar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Datos de productos (AHORA CON EL CAMPO 'precio' VARIADO)
+        const interiores = [
+            {nombre:  "Clivia Miniata", descripcion:"Interior/Exterior (prefiere la sombra)", precio:"S/ 20 – S/ 60", img:"Fotos260825/Clivia Miniata.jpg"},
+            {nombre:  "Anturio Rojo oscuro", descripcion:"Purificador de aire y decoración de salas/oficinas. De bajo mantenimiento.", precio:"S/ 25 – S/ 40", img:"Fotos260825/Anturio Rojo oscuro.jpg"},
+            {nombre:  "Anturio Rojo claro", descripcion:"Purificador de aire y decoración de salas/oficinas. De bajo mantenimiento.", precio:"S/ 25 – S/ 40", img:"Fotos260825/Anturio Rojo claro.jpg"},
+            {nombre:  "Bromelia Variegada", descripcion:"Planta ornamental de alto valor estético.", precio:"S/ 20 – S/ 30", img:"Fotos260825/Bromelia Variegada.jpg"},
+            {nombre:  "Monstera Deliciosa", descripcion:"Planta ornamental icónica.", precio:"S/ 40 – S/ 60", img:"Fotos260825/Monstera Deliciosa.jpg"},
+            {nombre:  "Croton", descripcion:"Interior/Exterior (sensible)", precio:"S/ 20 – S/ 60", img:"Fotos260825/Croton.jpg"},
+            {nombre:  "Helecho de Boston", descripcion:"Muy valorado como purificador de aire. Necesita mucha humedad y sombra.", precio:"S/ 30 – S/ 60", img:"Fotos260825/Helecho de Boston.jpg"},
+            {nombre:  "Anturio", descripcion:"Planta de interior con flores rojas en forma de corazón.", precio:"S/ 30 – S/ 80", img:"Fotos261025/Anturio.jpg"},
+            {nombre:  "Orquídea Cattleya", descripcion:"Requiere luz brillante indirecta y humedad.", precio:"S/ 90 – S/ 150", img:"Fotos261025/Orquídea Cattleya.jpg"},
+            {nombre:  "Anturio", descripcion:"Planta de interior con flores rojas en forma de corazón.", precio:"S/ 25 – S/ 40", img:"Fotos20102025/Anturio.jpg"},
+            {nombre:  "Lengua de Suegra", descripcion:"Purificadora de aire. Requiere poca luz y poco riego.", precio:"S/ 15 – S/ 30", img:"Fotos20102025/Lengua de Suegra.jpg"},
+            {nombre:  "Anturio", descripcion:"Planta de interior con flores rojas en forma de corazón.", precio:"S/ 25 – S/ 40", img:"Fotos051025/Anturio.jpg"},
+            {nombre:  "Árbol de la Abundancia", descripcion:"Hojas pequeñas, redondas y carnosas. Requiere sol y poco riego.", precio:"S/ 25 – S/ 30", img:"Fotos051025/Árbol de la Abundancia.jpg"},
+            {nombre:  "Helecho Culantrillo", descripcion:"Requiere sombra y alta humedad constante.", precio:"S/ 30 – S/ 40", img:"Fotos051025/Helecho Culantrillo.jpg"},
+            {nombre:  "Lengua de Suegra", descripcion:"Purificadora de aire. Requiere poca luz y poco riego.", precio:"S/ 15 – S/ 30", img:"Fotos051025/Lengua de Suegra.jpg"},
+            {nombre:  "Haworthia Cebra", descripcion:"Requiere luz brillante indirecta y poco riego.", precio:"S/ 5 – S/ 10", img:"Fotos051025/Haworthia Cebra.jpg"},
+            {nombre:  "Croton", descripcion:"Interior/Exterior (sensible)", precio:"S/ 20 – S/ 60", img:"Fotos051025/Croton.jpg"},
+            {nombre:  "Cola de Burro", descripcion:"Requiere sol o luz brillante y poco riego.", precio:"S/ 5 – S/ 10", img:"Fotos051025/Cola de Burro.jpg"},
+            {nombre:  "Yuca", descripcion:"hojas largas, rígidas y puntiagudas. Muy resistente a la sequía. Requiere sol pleno.", precio:"S/ 15 – S/ 20", img:"Fotos051025/Yuca.jpg"},
+            {nombre:  "Punta de Flecha", descripcion:"Requiere luz brillante indirecta y humedad.", precio:"S/ 4 – S/ 7", img:"Fotos051025/Punta de Flecha.jpg"},
+            {nombre:  "Rosa de Piedra", descripcion:"Requiere sol o semisombra y poco riego.", precio:"S/ 25 – S/ 30", img:"Fotos051025/Rosa de Piedra.jpg"},
+            {nombre:  "Suculenta de Hojas Apiladas", descripcion:"Muestra tonos púrpura/rosado con sol. Requiere sol y poco riego.", precio:"S/ 10 – S/ 15", img:"Fotos051025/Suculenta de Hojas Apiladas.jpg"}
+        ];
+        const exteriores = [
+            {nombre:  "Bugambilia enana", descripcion:"Cobertura, Sombra,Cercas,Balcones", precio:"S/ 20– S/ 40", img:"Fotos260825/Bugambilia enana.jpg"},
+            {nombre:  "Cola de Zorro", descripcion:"Exterior (o Interior en ambientes con buena luz)", precio:"S/ 30 – S/ 40", img:"Fotos260825/Cola de Zorro.jpg"},
+            {nombre:  "Hibisco  Rosa China", descripcion:"Arbusto ornamental tropical.", precio:"S/ 15 – S/ 50", img:"Fotos260825/Hibisco  Rosa China.jpg"},
+            {nombre:  "Geranio de Color Oscuro", descripcion:"Ornamental para macetas y balcones.", precio:"S/ 3 – S/ 5", img:"Fotos260825/Geranio de Color Oscuro.jpg"},
+            {nombre:  "Geranio", descripcion:"Produce flores de color continuo. Requiere sol directo o semisombra.", precio:"S/ 3 – S/ 5", img:"Fotos260825/Geranio.jpg"},
+            {nombre:  "Rosa Negra", descripcion:"Exterior (o Interior con mucha luz)", precio:"S/ 15 – S/ 20", img:"Fotos260825/Rosa Negra.jpg"},
+            {nombre:  "Bugambilia fucsia", descripcion:"Produce color intenso y continuo. Necesita sol.", precio:"S/ 20 – S/ 60", img:"Fotos260825/Bugambilia fucsia.jpg"},
+            {nombre:  "Bugambilia rosa chicle", descripcion:"Produce color intenso y continuo. Necesita sol.", precio:"S/ 20 – S/ 60", img:"Fotos260825/Bugambilia rosa chicle.jpg"},
+            {nombre:  "Lantana Rastreadora", descripcion:"Atrae mariposas y es muy resistente a la sequía. Necesita mucho sol.", precio:"S/ 3 – S/ 5", img:"Fotos260825/Lantana Rastreadora.jpg"},
+            {nombre:  "Oreja de Elefante", descripcion:"tropical en interiores o exteriores sombreados. Requiere mucha agua y humedad.", precio:"S/ 60 – S/ 70", img:"Fotos260825/Oreja de Elefante.jpg"},
+            {nombre:  "Palmera Hawaiana", descripcion:"Excelente para decorar interiores grandes y purificar el aire.", precio:"S/ 50 – S/ 60", img:"Fotos260825/Palmera Hawaiana.jpg"},
+            {nombre:  "Sábila Enana", descripcion:"ideal para macetas y jardines de rocas.", precio:"S/ 2 – S/ 10", img:"Fotos260825/Sábila Enana.jpg"},
+            {nombre:  "Tecoma", descripcion:"Atrae colibríes y es ideal para setos, vallas y jardines soleados.", precio:"S/ 10 – S/ 15", img:"Fotos260825/Tecoma.jpg"},
+            {nombre:  "Echeveria", descripcion:"Hojas carnosas, color verde pálido con puntas rojizas.", precio:"S/ 5 – S/ 10", img:"Fotos261025/Echeveria.jpg"},
+            {nombre:  "Aloe", descripcion:"Requiere sol y poco riego.", precio:"S/ 2 – S/ 10", img:"Fotos261025/Aloe.jpg"},
+            {nombre:  "Helecho de Boston", descripcion:"Requiere sombra o luz indirecta y alta humedad.", precio:"S/ 30 – S/ 60", img:"Fotos261025/Helecho de Boston.jpg"},
+            {nombre:  "Ciprés Limón", descripcion:"Destaca por su fragancia a limón. Necesita sol pleno.", precio:"S/ 100 – S/ 150", img:"Fotos261025/Ciprés Limón.jpg"},
+            {nombre:  "Duranta", descripcion:"Arbusto de follaje amarillo. Ideal para setos. Necesita sol para color.", precio:"S/ 15 – S/ 30", img:"Fotos261025/Duranta.jpg"},
+            {nombre:  "Cica", descripcion:"Planta de tronco corto y follaje rígido similar al de una palma.", precio:"S/ 50 – S/ 150", img:"Fotos261025/Cica.jpg"},
+            {nombre:  "Pino de Tornillo", descripcion:"Follaje verde y amarillo, largo y en espiral. Típico de ambientes tropicales.", precio:"S/ 20 – S/ 25", img:"Fotos261025/Pino de Tornillo.jpg"},
+            {nombre:  "Duranta", descripcion:"Arbusto de follaje amarillo. Ideal para setos. Necesita sol para color.", precio:"S/ 10 – S/ 20", img:"Fotos20102025/Duranta.jpg"},
+            {nombre:  "Geranio", descripcion:"Produce flores de color continuo. Requiere sol directo o semisombra.", precio:"S/ 3 – S/ 5", img:"Fotos20102025/Geranio.jpg"},
+            {nombre:  "Geranio rosa", descripcion:"Planta popular de flores rosadas/fucsias en racimos.", precio:"S/ 3 – S/ 5", img:"Fotos051025/Geranio rosa.jpg"},
+            {nombre:  "Geranio blanco", descripcion:"Planta popular de flores rosadas/fucsias en racimos.", precio:"S/ 3 – S/ 5", img:"Fotos051025/Geranio blanco.jpg"},
+            {nombre:  "Geranio rojo", descripcion:"Planta popular de flores rosadas/fucsias en racimos.", precio:"S/ 3 – S/ 5", img:"Fotos051025/Geranio rojo.jpg"},
+            {nombre:  "Helecho de Boston", descripcion:"Requiere sombra o luz indirecta y alta humedad.", precio:"S/ 30 – S/ 60", img:"Fotos051025/Helecho de Boston.jpg"},
+            {nombre:  "Arbusto Fino", descripcion:"Requiere sol pleno.", precio:"S/ 30 – S/ 40", img:"Fotos051025/Arbusto Fino.jpg"},
+            {nombre:  "Suculenta Columna", descripcion:"Requiere sol pleno y poco riego.", precio:"S/ 5 – S/ 10", img:"Fotos051025/Suculenta Columna.jpg"},
+            {nombre:  "Cica", descripcion:"Crecimiento muy lento. Requiere sol o semisombra.", precio:"S/ 300 – S/ 400", img:"Fotos051025/Cica.jpg"},
+            {nombre:  "Palmera Areca", descripcion:"Requiere luz brillante indirecta.", precio:"S/ 40 – S/ 100", img:"Fotos051025/Palmera Areca.jpg"},
+            {nombre:  "Aloe Enano", descripcion:"Hojas carnosas y dentadas. Requiere sol y poco riego.", precio:"S/ 5 – S/ 10", img:"Fotos051025/Aloe Enano.jpg"},
+            {nombre:  "Cactus Barril Dorado", descripcion:"Requiere sol pleno y poco riego.", precio:"S/ 40 – S/ 60", img:"Fotos051025/Cactus Barril Dorado.jpg"},
+            {nombre:  "Helecho de Boston", descripcion:"Requiere sombra o luz indirecta y alta humedad.", precio:"S/ 30 – S/ 60", img:"Fotos051025/Helecho de Boston.jpg"}
+        ];
+        const materiales = [
+            {nombre:  "Eco cobre", descripcion:"Refuerza la defensa de las plantas y mata ciertos hongos", precio:"S/58.3", img:"Fotos101125/foto1.jpg"},
+            {nombre:  "Eco oil", descripcion:"Insecticida biólogico", precio:"S/21", img:"Fotos101125/foto2.jpg"},
+            {nombre:  "Ecopower 20-20-20", descripcion:"Fertilizante que aporta nitrógeno, fósforo y potasio para promover un crecimiento vegetal uniforme, vigoroso y equilibrado", precio:"S/15.7", img:"Fotos101125/foto3.jpg"},
+            {nombre:  "Ecopower potasio", descripcion:"Fertilizante que aporta potasio para el llenado de frutos", precio:"S/29", img:"Fotos101125/foto4.jpg"},
+            {nombre:  "Ultra wett", descripcion:"Mejora la uniformidad y penetración de fertilizantes y plaguicidas agrícolas", precio:"S/58.3", img:"Fotos101125/foto5.jpg"},
+            {nombre:  "Eco lavado", descripcion:"Detergente agrícola para limpiar la planta de impurezas", precio:"S/10.9", img:"Fotos101125/foto6.jpg"},
+            {nombre:  "Eco inductor", descripcion:"Refuerza la defensa de las plantas y aporta nutrientes esenciales", precio:"S/29", img:"Fotos101125/foto7.jpg"},
+            {nombre:  "Ecopower fósforo", descripcion:"Fertilizante que aporta fósforo que favorece la formación de raíces, flores y frutos", precio:"S/18.3", img:"Fotos101125/foto8.jpg"},
+            {nombre:  "Greenpower", descripcion:"Fertilizante que aporta nitrogeno facilmente asimilable que favorece la formación de hojas", precio:"S/15.7", img:"Fotos101125/foto9.jpg"},
+            {nombre:  "Ecopower amarre", descripcion:"Fertilizante que favorece el cuajado y mantenimiento de frutas en la planta", precio:"S/15.7", img:"Fotos101125/foto10.jpg"},
+            {nombre:  "Eco cobre", descripcion:"Refuerza la defensa de las plantas y mata ciertos hongos", precio:"S/58.3", img:"Fotos101125/foto11.jpg"},
+            {nombre:  "Betterglue", descripcion:"Pégamento agrícola bioracional para el control de plagas", precio:"S/80", img:"Fotos101125/foto12.jpg"},
+            {nombre:  "Ecocicatrix", descripcion:"Cicatrizante agrícola para heridas de podas en arboles frutales", precio:"S/40", img:"Fotos101125/foto13.jpg"},
+            {nombre:  "Temo-o-cid", descripcion:"Pégamento agrícola sintético para el control de plagas", precio:"S/61", img:"Fotos101125/foto14.jpg"},
+            {nombre:  "Trampa delta", descripcion:"Trampa para atrapar mariposas y polillas - requiere atrayente", precio:"S/18", img:"Fotos101125/foto15.jpg"},
+            {nombre:  "Trampa delta", descripcion:"Trampa para atrapar mariposas y polillas - requiere atrayente", precio:"S/18", img:"Fotos101125/foto16.jpg"},
+            {nombre:  "Trampa delta", descripcion:"Trampa para atrapar mariposas y polillas - requiere atrayente", precio:"S/18", img:"Fotos101125/foto17.jpg"},
+            {nombre:  "Pellets de levadura de torula x Kg", descripcion:"Atrayente para mosca de la fruta", precio:"S/115", img:"Fotos101125/foto18.jpg"},
+            {nombre:  "Pellets de levadura de torula x Kg", descripcion:"Atrayente para mosca de la fruta", precio:"S/115", img:"Fotos101125/foto19.jpg"},
+            {nombre:  "Ecopower Ca", descripcion:"Fertilizante que aporta calcio asimilable para fortalecer y mejorar la firmeza de los brotes jovenes de la planta", precio:"S/15", img:"Fotos101125/foto20.jpg"},
+            {nombre:  "Ecopower Ca B", descripcion:"Fertilizante que aporta calcio y boro asimilable para fortalecer y mejorar la firmeza de raices, brotes, floración y cuajado de frutas", precio:"S/15", img:"Fotos101125/foto21.jpg"},
+            {nombre:  "Crecifácil trihormonal", descripcion:"Bioestimulante que favorece el enraizamiento, crecimiento y floración de las plantas", precio:"S/33.7", img:"Fotos101125/foto22.jpg"},
+            {nombre:  "Ultra thru", descripcion:"Favorece la uniformidad y penetración de fertilizantes y plaguicidas agrícolas", precio:"S/55.6", img:"Fotos101125/foto23.jpg"},
+            {nombre:  "Pro roots", descripcion:"Enraizante nutricional que favorece la condiciones optimas para la rápida multiplicación de raices", precio:"S/17.8", img:"Fotos101125/foto24.jpg"},
+            {nombre:  "Maxi roots", descripcion:"Enraizante hormonal que favorece la rápida multiplicación de raices", precio:"S/29.9", img:"Fotos101125/foto25.jpg"},
+            {nombre:  "Trampa multilure", descripcion:"Trampa para atrapar moscas de la fruta - requiere atrayente", precio:"S/31", img:"Fotos101125/foto26.jpg"},
+            {nombre:  "Atrayente 3 componentes (unipack)", descripcion:"Atrayente síntetico para moscas de la fruta", precio:"S/18", img:"Fotos101125/foto27.jpg"},
+            {nombre:  "Thrips lure", descripcion:"Atrayente síntetico para toda especie de trips", precio:"S/16", img:"Fotos101125/foto28.jpg"},
+            {nombre:  "Ceratipack", descripcion:"Trampa completa para mosca de la fruta", precio:"S/30", img:"Fotos101125/foto29.jpg"},
+            {nombre:  "Trampa pegajosa doble cara", descripcion:"Trampa pegajosa para todo tipo de insectos", precio:"S/8", img:"Fotos101125/foto30.jpg"}
+
+        
+        ];
+        
+        // Intersection Observer para lazy loading ultra-optimizado
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    const skeleton = img.previousElementSibling;
+                    
+                    img.src = img.dataset.src;
+                    img.onload = () => {
+                        img.classList.add('loaded');
+                        if (skeleton) skeleton.remove();
+                    };
+                    observer.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '50px',
+            threshold: 0.01
+        });
+        
+        // Renderizar productos (optimizado con DocumentFragment + lazy loading)
+        function renderProductos(productos, containerId) {
+            const container = document.getElementById(containerId);
+            const fragment = document.createDocumentFragment();
+            
+            productos.forEach((producto, index) => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.onclick = () => openLightbox(producto);
+                
+                // Solo cargar las primeras 6 imágenes inmediatamente, el resto con lazy loading
+                const shouldLazyLoad = index >= 6;
+                
+                card.innerHTML = `
+                    <div class="product-image-container">
+                        ${shouldLazyLoad ? '<div class="image-skeleton"></div>' : ''}
+                        <img ${shouldLazyLoad ? 'data-src' : 'src'}="${producto.img}" 
+                             alt="${producto.nombre}" 
+                             class="product-image${shouldLazyLoad ? '' : ' loaded'}" 
+                             loading="lazy" 
+                             decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">${producto.nombre}</h3>
+                        <p class="product-price">Precio: ${producto.precio}</p> 
+                        <p class="product-description">${producto.descripcion}</p>
+                        <a href="https://wa.me/51992555359?text=Hola!%20Quiero%20comprar%20${encodeURIComponent(producto.nombre)}%20(Precio%20aprox:%20${encodeURIComponent(producto.precio)})" 
+                           class="buy-btn" 
+                           target="_blank" 
+                           rel="noopener"
+                           onclick="event.stopPropagation()">
+                            💬 Comprar por WhatsApp
+                        </a>
+                    </div>
+                `;
+                fragment.appendChild(card);
+            });
+            
+            container.appendChild(fragment);
+            
+            // Observar imágenes lazy
+            container.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Estado de tabs renderizados
+        const renderedTabs = {
+            interiores: false,
+            exteriores: false,
+            materiales: false
+        };
+        
+        // Renderizar solo cuando se necesite (on-demand)
+        function ensureTabRendered(tabName) {
+            const gridId = tabName + 'Grid';
+            if (!renderedTabs[tabName]) {
+                const productos = tabName === 'interiores' ?
+                                 interiores : 
+                                 tabName === 'exteriores' ?
+                                 exteriores : materiales;
+                renderProductos(productos, gridId);
+                renderedTabs[tabName] = true;
+            }
+        }
+
+        // Inicializar solo el primer tab visible (interiores)
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => {
+                ensureTabRendered('interiores');
+            }, { timeout: 500 });
+        } else {
+            setTimeout(() => ensureTabRendered('interiores'), 100);
+        }
+
+        // Funciones del catálogo lateral (optimizadas para rendimiento máximo)
+        const catalogOverlay = document.getElementById('catalogOverlay');
+        const catalogSection = document.getElementById('catalogSection');
+        
+        function openCatalog() {
+            // Usar requestAnimationFrame para animaciones fluidas
+            requestAnimationFrame(() => {
+                catalogOverlay.classList.add('active');
+                catalogSection.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        function closeCatalog() {
+            requestAnimationFrame(() => {
+                catalogOverlay.classList.remove('active');
+                catalogSection.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        // Función para cambiar tabs (optimizada con renderizado on-demand)
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+        
+        function switchTab(event, tabName) {
+            // Renderizar el tab si aún no se ha renderizado
+            ensureTabRendered(tabName);
+            // Usar requestAnimationFrame para transiciones suaves
+            requestAnimationFrame(() => {
+                // Remover activo de todos los tabs
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabPanels.forEach(panel => panel.classList.remove('active'));
+                
+                // Activar el tab seleccionado
+                event.target.classList.add('active');
+                document.getElementById(tabName + '-tab').classList.add('active');
+            });
+        }
+
+        // Funciones del lightbox
+        function openLightbox(producto) {
+            document.getElementById('lightboxImage').src = producto.img;
+            document.getElementById('lightboxName').textContent = producto.nombre;
+            // NUEVO: Mostrar el precio en el lightbox
+            document.getElementById('lightboxPrice').textContent = `Precio: ${producto.precio}`; 
+            document.getElementById('lightboxDescription').textContent = producto.descripcion;
+            // NUEVO: Enviar el precio en el mensaje de WhatsApp
+            document.getElementById('lightboxBuyBtn').href = `https://wa.me/51992555359?text=Hola!%20Quiero%20comprar%20${encodeURIComponent(producto.nombre)}%20(Precio%20aprox:%20${encodeURIComponent(producto.precio)})`;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        // Cerrar con ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                closeCatalog();
+            }
+        });
+        
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        // Smooth Scrolling (optimizado con passive listeners)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        document.getElementById('navMenu').classList.remove('active');
+                    }
+                }
+            }, { passive: false });
+        });
+        
+        // Optimización adicional: Prevenir layout thrashing en scroll
+        let ticking = false;
+        catalogSection.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    </script>
+</body>
+</html>

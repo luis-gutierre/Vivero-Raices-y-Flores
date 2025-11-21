@@ -1,0 +1,6 @@
+# Ignorar todos los videos
+*.mp4
+
+# (opcional) ignorar también archivos temporales
+*.tmp
+*.log
